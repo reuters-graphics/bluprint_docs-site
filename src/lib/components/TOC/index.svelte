@@ -66,14 +66,16 @@
       transition: all 0.3s ease-in-out;
       @media (max-width: $mobile-break) {
         position: fixed;
-        left: calc((26.5rem + 30px) * -1);
+        width: 400px;
+        left: -400px;
         top: 51px;
         height: calc(100vh - 51px);
         z-index: 9;
         background-color: white;
-        max-width: calc(100% - 30px);
-        @media (max-width: 475px) {
-          left: calc((100% - 30px) * -1);
+
+        @media (max-width: 450px) {
+          width: 300px;
+          left: -300px;
         }
         &.active-mobile {
           left: 0;

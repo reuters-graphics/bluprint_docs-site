@@ -20,7 +20,7 @@ const homepage =
   pkg.repository
     .replace('https://github.com/reuters-graphics/', '')
     .replace(/\.git$/, '');
-console.log(getRootRelativePath(homepage));
+
 const prod = process.env.NODE_ENV === 'production';
 
 process.env.VITE_DATELINE = new Date().toISOString();
