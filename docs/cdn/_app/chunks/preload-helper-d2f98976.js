@@ -1,6 +1,6 @@
 const a = 'modulepreload',
   i = {},
-  u = 'https://reuters-graphics.github.io/style/cdn/_app/',
+  u = 'https://reuters-graphics.github.io/bluprint_docs-site/cdn/_app/',
   d = function (s, n) {
     return !n || n.length === 0
       ? s()

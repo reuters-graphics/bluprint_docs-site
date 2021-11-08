@@ -17,14 +17,14 @@ var k = (a, s, n) =>
       p = (e) => (e.done ? t(e.value) : Promise.resolve(e.value).then(i, m));
     p((n = n.apply(a, s)).next());
   });
-import { _ as u } from '../chunks/preload-helper-101fda89.js';
+import { _ as c } from '../chunks/preload-helper-d2f98976.js';
 import {
   X as E,
   S as P,
   i as T,
   s as C,
   W as I,
-  j as c,
+  j as f,
   k as O,
   l as $,
   m as j,
@@ -37,7 +37,7 @@ import {
   v as h,
   d as D,
   r as R,
-} from '../chunks/vendor-0f5fab7e.js';
+} from '../chunks/vendor-ae834d0e.js';
 var v = (a) => {
   const s = a
     .replace('./../../pages/', '')
@@ -65,7 +65,7 @@ function V(a) {
     m && (t = new m(p())),
     {
       c() {
-        c(s.$$.fragment), (n = O()), t && c(t.$$.fragment), (r = $());
+        f(s.$$.fragment), (n = O()), t && f(t.$$.fragment), (r = $());
       },
       l(e) {
         j(s.$$.fragment, e), (n = A(e)), t && j(t.$$.fragment, e), (r = $());
@@ -74,16 +74,16 @@ function V(a) {
         l(s, e, o), w(e, n, o), t && l(t, e, o), w(e, r, o), (i = !0);
       },
       p(e, [o]) {
-        const f = {};
+        const u = {};
         if (
-          (o & 2 && (f.seoTitle = e[1].title),
-          o & 2 && (f.seoDescription = e[1].description),
-          o & 2 && (f.shareTitle = e[1].title),
-          o & 2 && (f.shareDescription = e[1].description),
+          (o & 2 && (u.seoTitle = e[1].title),
+          o & 2 && (u.seoDescription = e[1].description),
+          o & 2 && (u.shareTitle = e[1].title),
+          o & 2 && (u.shareDescription = e[1].description),
           o & 2 &&
-            (f.shareImgPath = e[1].image || 'images/reuters-graphics.jpg'),
-          o & 2 && (f.lang = e[1].lang || 'en'),
-          s.$set(f),
+            (u.shareImgPath = e[1].image || 'images/reuters-graphics.jpg'),
+          o & 2 && (u.lang = e[1].lang || 'en'),
+          s.$set(u),
           m !== (m = e[0]))
         ) {
           if (t) {
@@ -96,7 +96,7 @@ function V(a) {
           }
           m
             ? ((t = new m(p())),
-              c(t.$$.fragment),
+              f(t.$$.fragment),
               _(t.$$.fragment, 1),
               l(t, r.parentNode, r))
             : (t = null);
@@ -118,38 +118,38 @@ function z(s) {
   return k(this, arguments, function* ({ page: a }) {
     const n = {
       './../../pages/home.md': () =>
-        u(
-          () => import('../chunks/home-825f5e2c.js'),
+        c(
+          () => import('../chunks/home-498e744a.js'),
           [
-            'chunks/home-825f5e2c.js',
-            'chunks/vendor-0f5fab7e.js',
+            'chunks/home-498e744a.js',
+            'chunks/vendor-ae834d0e.js',
             'assets/vendor-4ab6d437.css',
           ]
         ),
       './../../pages/making-pages.md': () =>
-        u(
-          () => import('../chunks/making-pages-40d7e246.js'),
+        c(
+          () => import('../chunks/making-pages-81c282e6.js'),
           [
-            'chunks/making-pages-40d7e246.js',
-            'chunks/vendor-0f5fab7e.js',
+            'chunks/making-pages-81c282e6.js',
+            'chunks/vendor-ae834d0e.js',
             'assets/vendor-4ab6d437.css',
           ]
         ),
       './../../pages/nested/another.md': () =>
-        u(
-          () => import('../chunks/another-56300375.js'),
+        c(
+          () => import('../chunks/another-29e58464.js'),
           [
-            'chunks/another-56300375.js',
-            'chunks/vendor-0f5fab7e.js',
+            'chunks/another-29e58464.js',
+            'chunks/vendor-ae834d0e.js',
             'assets/vendor-4ab6d437.css',
           ]
         ),
       './../../pages/nested/page.md': () =>
-        u(
-          () => import('../chunks/page-4787e19e.js'),
+        c(
+          () => import('../chunks/page-d2c25947.js'),
           [
-            'chunks/page-4787e19e.js',
-            'chunks/vendor-0f5fab7e.js',
+            'chunks/page-d2c25947.js',
+            'chunks/vendor-ae834d0e.js',
             'assets/vendor-4ab6d437.css',
           ]
         ),
@@ -165,7 +165,7 @@ function z(s) {
     return { props: { Component: r.default, metadata: r.metadata } };
   });
 }
-function b(a, s, n) {
+function S(a, s, n) {
   let { Component: t } = s,
     { metadata: r } = s;
   return (
@@ -179,7 +179,7 @@ function b(a, s, n) {
 class B extends P {
   constructor(s) {
     super();
-    T(this, s, b, V, C, { Component: 0, metadata: 1 });
+    T(this, s, S, V, C, { Component: 0, metadata: 1 });
   }
 }
 export { B as default, z as load };

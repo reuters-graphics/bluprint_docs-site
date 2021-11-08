@@ -3,30 +3,30 @@ import {
   i as v,
   s as x,
   e as n,
-  t as b,
+  t as E,
   c as d,
   a as c,
-  g as E,
+  g as b,
   d as o,
   b as u,
   f as S,
   I as l,
   V as h,
-} from './vendor-0f5fab7e.js';
+} from './vendor-ae834d0e.js';
 function y(_) {
   let e, t, a, i;
   return {
     c() {
-      (e = n('section')), (t = n('h1')), (a = n('a')), (i = b(m)), this.h();
+      (e = n('section')), (t = n('h1')), (a = n('a')), (i = E(m)), this.h();
     },
     l(s) {
       e = d(s, 'SECTION', {});
       var r = c(e);
       t = d(r, 'H1', { id: !0 });
-      var f = c(t);
-      a = d(f, 'A', { href: !0 });
-      var p = c(a);
-      (i = E(p, m)), p.forEach(o), f.forEach(o), r.forEach(o), this.h();
+      var p = c(t);
+      a = d(p, 'A', { href: !0 });
+      var f = c(a);
+      (i = b(f, m)), f.forEach(o), p.forEach(o), r.forEach(o), this.h();
     },
     h() {
       u(a, 'href', '#title'), u(t, 'id', 'title');

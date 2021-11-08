@@ -2071,7 +2071,7 @@ const name = 'my-project',
     build: 'svelte-kit build',
     postinstall: 'husky install',
   },
-  repository = 'https://github.com/reuters-graphics/style.git',
+  repository = 'https://github.com/reuters-graphics/bluprint_docs-site.git',
   devDependencies = {
     '@babel/core': '^7.15.5',
     '@babel/eslint-parser': '^7.15.4',
@@ -2130,8 +2130,7 @@ const name = 'my-project',
     'svelte-fa': '^2.3.3',
     'svelte-markdown': '^0.1.5',
     'ua-parser-js': '^0.7.27',
-  },
-  homepage = '';
+  };
 var pkg = {
   name,
   version,
@@ -2146,7 +2145,6 @@ var pkg = {
   devDependencies,
   engines,
   dependencies,
-  homepage,
 };
 const getStores = () => {
     const e = getContext('__svelte__');

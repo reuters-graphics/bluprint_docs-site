@@ -6,13 +6,13 @@ import {
   t as v,
   c as n,
   a as d,
-  g as b,
+  g as E,
   d as r,
   b as l,
-  f as E,
+  f as b,
   I as h,
   V as u,
-} from './vendor-0f5fab7e.js';
+} from './vendor-ae834d0e.js';
 function H(p) {
   let e, t, s, c;
   return {
@@ -30,7 +30,7 @@ function H(p) {
       var m = d(t);
       s = n(m, 'A', { href: !0 });
       var f = d(s);
-      (c = b(f, 'Welcome to your docs site')),
+      (c = E(f, 'Welcome to your docs site')),
         f.forEach(r),
         m.forEach(r),
         a.forEach(r),
@@ -42,7 +42,7 @@ function H(p) {
         l(e, 'class', 'body-text');
     },
     m(o, a) {
-      E(o, e, a), h(e, t), h(t, s), h(s, c);
+      b(o, e, a), h(e, t), h(t, s), h(s, c);
     },
     p: u,
     i: u,

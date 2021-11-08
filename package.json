@@ -8,7 +8,7 @@
     "build": "svelte-kit build",
     "postinstall": "husky install"
   },
-  "repository": "https://github.com/reuters-graphics/style.git",
+  "repository": "https://github.com/reuters-graphics/bluprint_docs-site.git",
   "lint-staged": {
     "*.js": "eslint --cache --fix",
     "*.{js,css,md,svelte}": "prettier --write"
@@ -73,6 +73,5 @@
     "svelte-fa": "^2.3.3",
     "svelte-markdown": "^0.1.5",
     "ua-parser-js": "^0.7.27"
-  },
-  "homepage": ""
+  }
 }
