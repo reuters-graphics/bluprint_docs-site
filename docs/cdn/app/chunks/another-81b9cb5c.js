@@ -12,7 +12,7 @@ import {
   f as y,
   I as h,
   V as c,
-} from './vendor-ae834d0e.js';
+} from './vendor-3470fd39.js';
 function A(_) {
   let e, t, a, i;
   return {

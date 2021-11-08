@@ -16,9 +16,7 @@ export async function get() {
   }
 
   const docs = await Promise.all(promises);
-  const publishedDocs = docs
-    .filter((doc) => doc.published && doc.title)
-    .sort((a, b) => (a.order || Infinity) - (b.order || Infinity));
+  const publishedDocs = docs.filter((doc) => doc.published && doc.title);
 
   return {
     body: publishedDocs,

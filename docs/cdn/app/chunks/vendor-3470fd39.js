@@ -2068,7 +2068,7 @@ const name = 'my-project',
   type = 'module',
   scripts = {
     start: 'svelte-kit dev --open',
-    build: 'svelte-kit build',
+    build: 'svelte-kit build && touch docs/.nojekyll',
     postinstall: 'husky install',
   },
   repository = 'https://github.com/reuters-graphics/bluprint_docs-site.git',
