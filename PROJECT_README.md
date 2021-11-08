@@ -1,6 +1,6 @@
 ![](https://graphics.thomsonreuters.com/style-assets/images/logos/reuters-graphics-logo/svg/graphics-logo-color-dark.svg)
 
-# projectName
+# project-name
 
 A Reuters Graphics docs site.
 
