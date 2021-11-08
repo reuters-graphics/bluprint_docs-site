@@ -16,9 +16,8 @@ jobs:
           node-version: '14'
       - run: npm install
       - run: npm run build
-      - run: |
-        git config user.name hobbes7878
-        git config user.email jon.r.mcclure@gmail.com
-        git add .
-        git commit --allow-empty -m "Rebuild site"
-        git push origin master
+      - run: git config user.name hobbes7878
+      - run: git config user.email jon.r.mcclure@gmail.com
+      - run: git add .
+      - run: git commit --allow-empty -m "Rebuild site"
+      - run: git push origin master
