@@ -1,0 +1,25 @@
+name: Build site
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-docs:
+    name: Build docs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - run: npm install
+      - run: npm run build
+      - run: |
+        git config user.name hobbes7878
+        git config user.email jon.r.mcclure@gmail.com
+        git add .
+        git commit --allow-empty -m "Rebuild site"
+        git push origin master
