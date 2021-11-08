@@ -1,33 +1,30 @@
 ![](https://graphics.thomsonreuters.com/style-assets/images/logos/reuters-graphics-logo/svg/graphics-logo-color-dark.svg)
 
-# my-project
+# 📚 bluprint_docs-site
 
-Graphics created with [bluprint_graphics-kit](https://github.com/reuters-graphics/bluprint_graphics-kit).
+A static site builder for great docs at Reuters Graphics.
 
-## Developing
+Built with:
 
-Develop your project.
+<a href="https://kit.svelte.dev/" target="_blank">
+<img src="https://kit.svelte.dev/images/svelte-kit-horizontal.svg" height="40" />
+</a>
 
-```
-yarn start
-```
+## Quickstart
 
-Build and publish preview pages to AWS.
+This repo is best used with [bluprint](https://github.com/reuters-graphics/bluprint), our in-house templating tool.
 
-```
-yarn preview
-```
-
-Build and upload your project to RNGS server.
+If you haven't already, add this bluprint to your CLI.
 
 ```
-yarn upload
+bluprint add reuters-graphics/bluprint_docs-site
 ```
 
-🍻 Publish your project in the RNGS server.
+Make a new directory and use the bluprint.
 
 ```
-yarn pub
+mkdir my-project && cd my-project
+bluprint start
 ```
 
-Read more in the [development docs](https://github.com/reuters-graphics/bluprint_graphics-kit/tree/master/docs/developers).
+Now [read the docs](https://reuters-graphics.github.io/bluprint_docs-site/) to see how to create your docs site!

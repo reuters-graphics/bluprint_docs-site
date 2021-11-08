@@ -17,6 +17,15 @@ h6 {
   }
 }
 
+p {
+  code {
+    margin: 0 3px;
+    background-color: #efefef;
+    padding: 1px 8px;
+    border-radius: 2px;
+  }
+}
+
 section,
 section.body-text {
   h1 {
@@ -29,4 +38,8 @@ section.body-text {
     font-weight: 200;
     font-size: 1.2rem;
   }
+}
+
+hr {
+  margin: 3rem 0;
 }

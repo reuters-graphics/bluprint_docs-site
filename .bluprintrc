@@ -1,0 +1,40 @@
+{
+  "bluprint": "^0.6.3",
+  "name": "Docs site builder",
+  "actions": [{
+    "action": "prompt",
+    "questions": [{
+      "type": "text",
+      "name": "projectName",
+      "message": "What should we call this project?"
+    }]
+  }, {
+    "action": "remove",
+    "paths": ["README.md", "docs/**/*"]
+  }, {
+    "action": "move",
+    "paths": ["PROJECT_README.md", "README.md"]
+  }, {
+    "action": "regexreplace",
+    "files": ["package.json", "README.md"],
+    "replace": [
+      ["projectName", "{{#slugify}}{{ projectName }}{{/slugify}}"]
+    ]
+  }, {
+    "action": "execute",
+    "cmds": [
+      ["yarn"],
+      ["chmod", ["ug+x", ".husky/pre-commit"]]
+    ]
+  }, {
+    "action": "execute",
+    "cmds": [
+      ["git", ["init"]],
+      ["git", ["add", "."]],
+      ["git", ["commit", "-m", "initial"]],
+      ["yarn", ["startup:create-repo"]],
+      ["yarn", ["husky", "install"]],
+      ["yarn", ["start"]]
+    ]
+  }]
+}

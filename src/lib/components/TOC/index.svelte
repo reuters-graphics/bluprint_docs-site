@@ -28,7 +28,7 @@
     </ul>
     {#each groupOrder as group}
       {#if group}
-        <h5>{group}</h5>
+        <h5>{group.replace('_', ' ')}</h5>
       {/if}
       <ul>
         {#each groupedDocs[group] as doc}
