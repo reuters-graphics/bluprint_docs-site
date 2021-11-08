@@ -4,7 +4,9 @@
 
 A static site builder for great docs at Reuters Graphics.
 
-Built with:
+Easy as vanilla when you need quick markdown docs. Throw in the Svelte when you want something 🌶️ spicy 🌶️.
+
+Pre-wired to publish to GitHub Pages. Write docs with [mdsvex](https://mdsvex.com/) and build with:
 
 <a href="https://kit.svelte.dev/" target="_blank">
 <img src="https://kit.svelte.dev/images/svelte-kit-horizontal.svg" height="40" />
