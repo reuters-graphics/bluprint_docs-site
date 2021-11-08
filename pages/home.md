@@ -6,11 +6,11 @@ published: true
 
 ::: section body-text
 
-<!-- <iframe title="amazing docs gif" style="pointer-events:none;border-radius:10px;" src="https://giphy.com/embed/3kD2Eciolhy4VOzjRV" width="480" height="270" frameBorder="0" class="giphy-embed"></iframe> -->
+<iframe title="amazing docs gif" style="pointer-events:none;border-radius:10px;" src="https://giphy.com/embed/3kD2Eciolhy4VOzjRV" width="480" height="270" frameBorder="0" class="giphy-embed"></iframe>
 
 # 🚀 Welcome to your docs site
 
-This kit helps you make simply beautiful docs sites from markdown, super-charged by [Svelte](svelte.dev) and [mdsvex](https://mdsvex.com/).
+This kit helps you make simply beautiful docs sites from markdown, super-charged by [Svelte](https://svelte.dev) and [mdsvex](https://mdsvex.com/).
 
 ---
 
@@ -35,7 +35,6 @@ Start the development server with:
 yarn start
 ```
 
-<!--
-Now read more about [making and editing pages](./making-pages) to start building your docs site. -->
+Now read more about [making and editing pages](./making-pages) to start building your docs site.
 
 :::

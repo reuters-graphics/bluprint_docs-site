@@ -83,6 +83,6 @@ When you're ready, simply upload your project to GitHub and configure [GitHub Pa
 
 Now sit back and relax. Through the magic of GitHub Actions, your site will rebuild to reflect your latest updates every time you push to master. 🍺
 
-<!-- <iframe title="beer time gif" src="https://giphy.com/embed/Zw3oBUuOlDJ3W" style="pointer-events:none;border-radius:10px;" width="240" height="223" frameBorder="0" class="giphy-embed"></iframe> -->
+<iframe title="beer time gif" src="https://giphy.com/embed/Zw3oBUuOlDJ3W" style="pointer-events:none;border-radius:10px;" width="240" height="223" frameBorder="0" class="giphy-embed"></iframe>
 
 :::

@@ -1,6 +1,6 @@
 {
   "bluprint": "^0.6.3",
-  "name": "Docs site builder",
+  "name": "Docs site",
   "actions": [{
     "action": "prompt",
     "questions": [{
