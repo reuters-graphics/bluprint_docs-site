@@ -7,14 +7,17 @@
 
 <script>
   import { Nav } from '@reuters-graphics/graphics-svelte-components';
-  import { base } from '$app/paths';
   import 'prism-themes/themes/prism-darcula.css';
   import TOC from '$lib/components/TOC/index.svelte';
 
   export let docs;
 </script>
 
-<Nav lightLogo="{false}" backgroundColour="#fff" link="{base + '/'}" />
+<Nav
+  lightLogo="{false}"
+  backgroundColour="#fff"
+  link="https://github.com/reuters-graphics/"
+/>
 
 <TOC docs="{docs}">
   <article class="container-fluid">
