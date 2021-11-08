@@ -49,7 +49,7 @@ export default {
     }),
   ],
   kit: {
-    appDir: '_app',
+    appDir: 'app',
     paths: {
       assets: prod ? homepage + '/cdn' : '',
       base: prod ? getRootRelativePath(homepage) : '',
