@@ -17,12 +17,24 @@ h6 {
   }
 }
 
-p {
+p,
+ul,
+ol {
   code {
     margin: 0 3px;
     background-color: #efefef;
-    padding: 1px 8px;
-    border-radius: 2px;
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 80%;
+    border-radius: 6px;
+    color: #666;
+  }
+  a {
+    color: #0969da;
+    &:hover {
+      color: #0969da;
+      text-decoration: underline;
+    }
   }
 }
 
