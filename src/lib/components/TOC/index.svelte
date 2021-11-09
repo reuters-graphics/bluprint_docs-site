@@ -126,7 +126,8 @@
         li {
           font-size: 1.1rem;
           line-height: 1.25rem;
-          margin: 0.8rem 0;
+          margin: 0.5rem 0;
+          padding: 0.2rem 0 0.1rem;
 
           a {
             color: #333;

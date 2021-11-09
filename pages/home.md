@@ -6,15 +6,13 @@ published: true
 
 ::: section body-text
 
-<iframe title="amazing docs gif" style="pointer-events:none;border-radius:10px;" src="https://giphy.com/embed/3kD2Eciolhy4VOzjRV" width="480" height="270" frameBorder="0" class="giphy-embed"></iframe>
+<img class='gif' src="https://media3.giphy.com/media/3kD2Eciolhy4VOzjRV/giphy.gif" />
 
 # 🚀 Welcome to your docs site
 
 This kit helps you make simply beautiful docs sites from markdown, super-charged by [Svelte](https://svelte.dev) and [mdsvex](https://mdsvex.com/).
 
----
-
-#### Quickstart
+### Quickstart
 
 If you're starting from scratch and haven't already, add this bluprint to your CLI.
 
@@ -38,3 +36,13 @@ yarn start
 Now read more about [making and editing pages](./making-pages) to start building your docs site.
 
 :::
+
+<style lang="scss">
+img.gif{
+  margin: 1rem auto 4rem;
+  width: 90%;
+  max-width: 450px;
+  border-radius: 10px;
+  display: block;
+}
+</style>

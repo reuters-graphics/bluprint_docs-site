@@ -77,11 +77,31 @@ And if simple markdown isn't enough, the docs are also processed with [mdsvex](h
 
 Add Svelte components or custom styles in the `src/lib` directory of your project.
 
+### Images
+
+One small rule: _Don't use markdown image syntax for images located in your project._
+
+Because the paths to images must be absolute (i.e., `https://...`), you should use SvelteKit's `assets` store to prefix paths to local images instead. Just import and use the store in your markdown files like:
+
+```svelte
+<script>
+  import { assets } from '$app/paths';
+</script>
+
+Lorem ipsum markdown...
+
+<!-- ✅ Use an image tag -->
+<img src="{`${assets}/images/my-image.jpg`}" alt="my image" />
+
+<!-- ❌ Not markdown for local images -->
+<!-- ![](/images/my-image.jpg) -->
+```
+
 ### Publishing
 
-When you're ready, simply upload your project to GitHub and configure [GitHub Pages in the settings](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#choosing-a-publishing-source) of your repo. (Use the `docs/` folder for your publishing source!)
+When you're ready, configure [GitHub Pages in the settings](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#choosing-a-publishing-source) of your repo --- Use the `docs/` folder for your publishing source! --- and put the URL to your Pages site in the `homepage` key of your project's `package.json`.
 
-Now sit back and relax. Through the magic of GitHub Actions, your site will rebuild to reflect your latest updates every time you push to master. 🍺
+Now upload your project to GitHub, sit back and relax. Through the magic of GitHub Actions, your site will rebuild to reflect your latest updates every time you push. 🍺
 
 <iframe title="beer time gif" src="https://giphy.com/embed/Zw3oBUuOlDJ3W" style="pointer-events:none;border-radius:10px;" width="240" height="223" frameBorder="0" class="giphy-embed"></iframe>
 
