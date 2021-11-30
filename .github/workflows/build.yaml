@@ -3,6 +3,7 @@ name: Build site
 on:
   push:
     branches:
+      - main
       - master
     paths:
       - 'src/**'
@@ -23,4 +24,4 @@ jobs:
       - run: git config user.email github-actions@github.com
       - run: git add .
       - run: git commit --allow-empty -m "Rebuild site"
-      - run: git push origin master
+      - run: git push origin
