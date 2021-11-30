@@ -14,7 +14,7 @@ This kit helps you make simply beautiful docs sites from markdown, super-charged
 
 ### Quickstart
 
-If you're starting from scratch and haven't already, add this bluprint to your CLI.
+If you're starting from scratch and haven't already, add this [bluprint](https://github.com/reuters-graphics/bluprint) to your CLI.
 
 ```
 bluprint add reuters-graphics/bluprint_docs-site
